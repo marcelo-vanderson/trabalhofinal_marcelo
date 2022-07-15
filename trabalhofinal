@@ -1,0 +1,140 @@
+package JanelaInicial;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class JanelaInicial extends JFrame {
+
+	private JPanel painelCampos;
+
+	private JPanel painelenviar;
+	private JButton enviar;
+
+	private JLabel telainicial;
+	private JPanel paineltelainicial;
+	private JTextField campotelainial;
+
+	private JLabel id1;
+	private JPanel painelid;
+	private JTextField campoid;
+
+	private JLabel pessoa;
+	private JPanel painelpessoa;
+	private JTextField campopessoa;
+
+	private JLabel carro;
+	private JPanel painelcarro;
+	private JTextField campocarro1;
+
+	private JLabel cidadeEstadoPais;
+	private JPanel painelcidadeEstadoPais;
+	private JTextField campocidadeEstadoPais;
+
+	private JLabel fruta;
+	private JPanel painelfruta;
+	private JTextField campofruta;
+
+	private JLabel objeto;
+	private JPanel painelobjeto;
+	private JTextField campoobjeto;
+
+	private JLabel animal;
+	private JPanel painelanimal;
+	private JTextField campoanimal;
+
+	private JLabel participante1;
+	private JPanel painelparticipante;
+	private JTextField campoparticipante;
+
+	private JLabel letra_sorteada1;
+	private JPanel painelletra_sorteada;
+	private JTextField campoletra_sorteada;
+
+	public JanelaInicial() {
+		super("JanelaInicial");
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		setSize(500, 300);
+		setVisible(true);
+		setLayout(new FlowLayout());
+		organizadordecomponentes();
+	}
+
+	private void organizadordecomponentes() {
+		painelCampos = new JPanel();
+		enviar = new JButton("entrar");
+		id1 = new JLabel("id");
+		painelid = new JPanel();
+		// criação dos componentes
+		telainicial = new JLabel("bem vindo ao jogo");
+		paineltelainicial = new JPanel();
+
+		// adicionar os componentes
+		paineltelainicial.add(telainicial);
+		painelid.add(campoid);
+		painelpessoa.add(campopessoa);
+		painelcarro.add(campocarro1);
+		painelcidadeEstadoPais.add(campocidadeEstadoPais);
+		painelfruta.add(campofruta);
+		painelobjeto.add(campoobjeto);
+		painelobjeto.add(campoanimal);
+		painelparticipante.add(campoparticipante);
+		painelletra_sorteada.add(campoletra_sorteada);
+
+		painelCampos.add(painelpessoa);
+		painelCampos.add(painelcidadeEstadoPais);
+		painelenviar.add(enviar);
+
+		// adicioinar a tela
+		add(paineltelainicial);
+		add(painelCampos);
+		add(painelenviar);
+
+		// adiciona esse painel a tela
+		add(paineltelainicial);
+
+//		id1 = new JLabel("id");
+//		painelid = new JPanel();
+//		campoid = new JTextField();
+
+		pessoa = new JLabel("pessoa");
+		painelpessoa = new JPanel();
+		campopessoa = new JTextField();
+
+		carro = new JLabel("carro");
+		painelcarro = new JPanel();
+		campocarro1 = new JTextField();
+
+		cidadeEstadoPais = new JLabel("cidadeEstadoPais");
+		painelcidadeEstadoPais = new JPanel();
+		campocidadeEstadoPais = new JTextField();
+
+		fruta = new JLabel("fruta");
+		painelfruta = new JPanel();
+		campofruta = new JTextField();
+
+		objeto = new JLabel("objeto");
+		painelobjeto = new JPanel();
+		campoobjeto = new JTextField();
+
+		animal = new JLabel("animal");
+		painelanimal = new JPanel();
+		campoanimal = new JTextField();
+
+		participante1 = new JLabel("participante1");
+		painelparticipante = new JPanel();
+		campoparticipante = new JTextField();
+
+		letra_sorteada1 = new JLabel("letra_sorteada");
+		painelletra_sorteada = new JPanel();
+		campoletra_sorteada = new JTextField();
+
+		painelenviar = new JPanel();
+
+	}
+}
